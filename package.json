@@ -1,0 +1,36 @@
+{
+  "name": "nodebp",
+  "version": "1.0.0",
+  "description": "node boilerplate based on freecodecamp lessons",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "bp",
+    "boilerplate",
+    "eec",
+    "EEC"
+  ],
+  "author": "EvilEpicCoder",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.6",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "circular-json": "^0.5.3",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.15",
+    "multer": "^1.3.0",
+    "multer-gridfs-storage": "^3.0.1"
+  }
+}

@@ -1,0 +1,162 @@
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label,
+input {
+  display: inline !important;
+}
+input[type="text"], select{
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: #eee;
+  font-size: 12px;
+}
+input[type="text"]:hover{
+  width: 100px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: #fff;
+}
+input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+  border-radius: 0.2em;
+  vertical-align: bottom;
+  position: relative;
+  -webkit-mask-image: none;
+  width: 10px;
+  height: 10px;
+
+
+}
+row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+.row .col.m1 {
+  width: 8.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m2 {
+  width: 16.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m3 {
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m4 {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m5 {
+  width: 41.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m7 {
+  width: 58.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m8 {
+  width: 66.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m9 {
+  width: 75%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m10 {
+  width: 83.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m11 {
+  width: 91.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row .col.m12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+span.header{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+input.active{
+    content: "";
+  background-color: #afa;
+}
+.inactive::after{
+  content: "SHOW";
+  background: #afa;
+}
+input.inactive{
+  content: "";
+  background: #f88;
+}
+.inactive::after{
+  content: "HIDE";
+  background: #f88;
+}

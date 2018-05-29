@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+  <link rel="apple-touch-icon" sizes="152x152" href="http://gavelyuk.info/images/gavel_icon152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://gavelyuk.info/images/gavel_icon120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://gavelyuk.info/images/gavel_icon76.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://gavelyuk.info/images/gavel_icon60.png">
+  <link rel="image_src" href="http://gavelyuk.info/images/scr.jpg">
+  <meta content="index, follow">
+  <meta property="og:type" content="website">
+
+  <script src="js/jquery3.3.1.js"></script>
+
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!-- <link rel="stylesheet" href="materialize/css/materialize.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <!-- <link rel="stylesheet" href="materialize/nui/nouislider.min.css"> -->
+  <!-- <script type="text/javascript" src="materialize/nui/nouislider.min.js"></script> -->
+  <!-- <script type="text/javascript" src="materialize/js/materialize.min.js"></script> -->
+  <link rel="stylesheet" href="./masternewcreate.css">
+  <!-- <link rel="stylesheet" href="./mac.css"> -->
+
+  <title>Add crew</title>
+  <base target="_self">
+</head>
+
+<style media="screen">
+  * {
+    /* outline: 1px solid black; */
+    font-family: monospace;
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  table {
+    border: 1px solid #666;
+    width: 70%;
+  }
+
+  .m4 {
+    /* outline: 1px solid red; */
+  }
+
+  .mac-container {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    padding: 5px;
+    background: linear-gradient(to bottom, #e9e9e9, #b1b1b1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .mac-header-btn {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    border: 0.5px #c3c3c3 solid;
+    position: relative;
+    font-size: 12px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 1.5px 5px, 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .select-certificates {
+    width: 80px;
+  }
+
+  .select-flag {
+    width: 60px;
+  }
+</style>
+
+<body>
+  <h1>Create Crew</h1>
+  <div class="row">
+    <form class="" action="index.html" method="post">
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">General information</span>
+        </div>
+        <div class="col m4">
+          <span id="idgeneral" class="mac-header-btn"></span>
+        </div>
+      </div>
+      <div id="divgeneral" class="col m12 general">
+        <script type="text/javascript">
+          $("#divgeneral").load("general.html");
+        </script>
+      </div>
+
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">Next of Kin information</span>
+        </div>
+        <div class="col m4">
+          <span id="idnok" class="mac-header-btn"></span>
+        </div>
+      </div>
+      <div id="divnok" class="col m12 nextofkin">
+        <script type="text/javascript">
+          $("#divnok").load("nok.html");
+        </script>
+      </div>
+
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">Certificates</span>
+        </div>
+        <div class="col m4">
+          <span id="idcert" class="mac-header-btn"></span>
+        </div>
+      </div>
+
+      <div id="divcertcoc" class="col m12 certificates">
+        <script type="text/javascript">
+          $("#divcertcoc").load("certcoc.html");
+        </script>
+      </div>
+
+      <div id="divcertendorse" class="col m12 certificates">
+        <script type="text/javascript">
+          $("#divcertendorse").load("certendorse.html");
+        </script>
+      </div>
+
+      <div id="divcertstcw" class="col m12 certificates">
+        <script type="text/javascript">
+          $("#divcertstcw").load("certstcw.html");
+        </script>
+      </div>
+
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">Medical</span>
+        </div>
+        <div class="col m4">
+          <span id="idmedical" class="mac-header-btn"></span>
+        </div>
+      </div>
+
+      <div id="divmedical" class="col m12 medical">
+        <script type="text/javascript">
+          $("#divmedical").load("medical.html");
+        </script>
+      </div>
+
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">Expirience</span>
+        </div>
+        <div class="col m4">
+          <span id="idexpirience" class="mac-header-btn"></span>
+        </div>
+      </div>
+
+      <div id="divexpirience" class="col m12 expiriencen">
+        <script type="text/javascript">
+          $("#divexpirience").load("expirience.html");
+        </script>
+      </div>
+
+      <div class="col m12">
+        <div class="col m4">
+          <span class="header">Travel</span>
+        </div>
+        <div class="col m4">
+          <span id="idtravel" class="mac-header-btn"></span>
+        </div>
+      </div>
+
+      <div id="divtravel" class="col m12 travel">
+        <script type="text/javascript">
+          $("#divtravel").load("travel.html");
+        </script>
+      </div>
+
+
+
+
+
+
+    </form>
+  </div>
+
+
+</body>
+<script type="text/javascript">
+
+autoHider("idgeneral", "general");
+autoHider("idnok", "nextofkin");
+autoHider("idcert", "certificates");
+autoHider("idmedical", "medical");
+autoHider("idexpirience", "expirience");
+autoHider("idtravel", "travel");
+
+
+function autoHider(idToClick, classNameToHide){
+  let hide = document.getElementById(idToClick);
+  hide.onclick = (function(x) {
+    console.log(x);
+    let certificates = document.getElementsByClassName(classNameToHide);
+    console.log(certificates);
+    for (var i = 0; i < certificates.length; i++) {
+      if (certificates[i].style.display == "none") {
+        certificates[i].style.display = "inherit";
+      } else {
+        certificates[i].style.display = "none";
+      }
+    }
+    if (hide.style.backgroundColor == "red") {
+      hide.style.backgroundColor = "lightgreen";
+    } else {
+      hide.style.backgroundColor = "red";
+    }
+  });
+
+}
+  // NOK --------------------------------------------------
+
+  // let hidenok = document.getElementById("idnok");
+  // hidenok.onclick = (function(x) {
+  //   console.log(x);
+  //   let nextofkin = document.getElementsByClassName("nextofkin");
+  //   console.log(nextofkin);
+  //   for (var i = 0; i < nextofkin.length; i++) {
+  //     if (nextofkin[i].style.display == "none") {
+  //       nextofkin[i].style.display = "inherit";
+  //     } else {
+  //       nextofkin[i].style.display = "none";
+  //     }
+  //   }
+  //   if (hidenok.style.backgroundColor == "red") {
+  //     hidenok.style.backgroundColor = "lightgreen";
+  //   } else {
+  //     hidenok.style.backgroundColor = "red";
+  //   }
+  // });
+  //
+  // let hidecert = document.getElementById("idcert");
+  // hidecert.onclick = (function(x) {
+  //   console.log(x);
+  //   let certificates = document.getElementsByClassName("certificates");
+  //   console.log(certificates);
+  //   for (var i = 0; i < certificates.length; i++) {
+  //     if (certificates[i].style.display == "none") {
+  //       certificates[i].style.display = "inherit";
+  //     } else {
+  //       certificates[i].style.display = "none";
+  //     }
+  //   }
+  //   if (hidecert.style.backgroundColor == "red") {
+  //     hidecert.style.backgroundColor = "lightgreen";
+  //   } else {
+  //     hidecert.style.backgroundColor = "red";
+  //   }
+  // });
+
+
+  // CERTIFICATES --------------------------------------------
+  // function AutoFillCoc(){
+  //   let arrCoc = ["Barge Master",
+  //     "Master &lt; 3000 GT",
+  //     "Master &lt; 500 GT",
+  //     "Master all ships",
+  //     "Chief Officer &lt; 3000 GT",
+  //     "Chief Officer &lt; 500GT",
+  //     "Chief Officer all ships",
+  //     "Maritime Officer all ships",
+  //     "SMBW Limited 500 GT / 3000 KW",
+  //     "Chief Engineer &lt; 3000 KW",
+  //     "Officer Navigation Watch &lt; 3000 GT",
+  //     "Officer Navigation Watch &lt; 500 GT",
+  //     "Officer Navigation Watch all ships",
+  //     "Chief Engineer 3000 KW or more",
+  //     "2nd Engineer 3000 KW or more",
+  //     "2nd Engineer &lt; 3000 KW",
+  //     "Officer Engineering Watch 750 KW or more",
+  //     "DP Full licensed",
+  //     "DP Limited",
+  //     "Electrical Technical Officer",
+  //     "Electro Technical rating",
+  //     "Rating Engine Room support level A/III-5",
+  //     "Rating Navigation Support level A-II/5",
+  //     "Rating part of Engineering watch",
+  //     "Rating part of Navigational Watch",
+  //     "Welder/Turner",
+  //     "Cook",
+  //     "Steward",
+  //     "COC verification",
+  //     "DP Licensed (Limited)",
+  //     "Certificate of Proficiency ( Chemical )",
+  //     "Certificate of Proficiency ( Gas )",
+  //     "Certificate of Proficiency ( Oil )",
+  //     "Certificate of Proficiency (Basic Oil and Chemical)",
+  //     "Authorisation for work in Norway",
+  //     "CEC Other",
+  //     "Combat Medical Technician (British Army)",
+  //     "Competence Update Course",
+  //     "GMDSS Certificate of Compentency",
+  //     "Maritime Officer small ships",
+  //     "Mental Health Nurse RN3 / RNMH",
+  //     "Nurse Registration NMC / BIG",
+  //     "Operation Department Practitioner (ODP)",
+  //     "Refrigeration Engineer",
+  //   ];
+  //   var autoCoc = document.getElementById("field301");
+  //   var optionArr=[];
+  //   var option=[];
+  //   for (var i = 0; i < arrCoc.length; i++) {
+  //     option[i] = document.createElement("option");
+  //     option[i].text=arrCoc[i];
+  //     option[i].value=arrCoc[i];
+  //     //optionArr.push(option);
+  //     autoCoc.add(option[i]);
+  //   }
+  //
+  // }
+  // AutoFillCoc();
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  });
+</script>
+
+</html>

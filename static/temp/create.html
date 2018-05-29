@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+  <link rel="apple-touch-icon" sizes="152x152" href="http://gavelyuk.info/images/gavel_icon152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://gavelyuk.info/images/gavel_icon120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://gavelyuk.info/images/gavel_icon76.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://gavelyuk.info/images/gavel_icon60.png">
+  <link rel="image_src" href="http://gavelyuk.info/images/scr.jpg">
+  <meta content="index, follow">
+  <meta property="og:type" content="website">
+
+  <script src="js/jquery3.3.1.js"></script>
+
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <!-- <link rel="stylesheet" href="materialize/css/materialize.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <!-- <link rel="stylesheet" href="materialize/nui/nouislider.min.css"> -->
+  <!-- <script type="text/javascript" src="materialize/nui/nouislider.min.js"></script> -->
+  <!-- <script type="text/javascript" src="materialize/js/materialize.min.js"></script> -->
+  <link rel="stylesheet" href="./masternewcreate.css">
+
+  <title>Add crew</title>
+  <base target="_self">
+</head>
+
+<style media="screen">
+b{
+  outline: 1px solid black;
+  font-family: sans-serif;
+  margin: 2px;
+  font-size: 12px;
+}
+table{
+  border: 1px solid red;
+  width: 70%;
+}
+</style>
+
+<body>
+  <h1>Create Crew</h1>
+  <div class="row">
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="field1">Readiness:</label></td>
+          <td><input id="field1" type="text" name="gen-da" value="13.06.2018"></td>
+          <td><label for="field2">Salary :</label></td>
+          <td><input id="field2" type="text" name="gen-salary" value="3800Eur"></td>
+          <td><label for="rank">Rank</label></td>
+          <td><select id="rank" name="rank">
+            <option value="Not selected" selected>Not selected</option>
+            <option value="Master">Master</option>
+            <option value="ChOff">Ch.Off</option>
+            <option value="2ndOff">2nd.Off</option>
+            <option value="3rdOff">3rd.Off</option>
+            <option value="ChEng">Ch.Eng</option>
+            <option value="2ndEng">2nd.Eng</option>
+            <option value="3rdEng">3rd.Eng</option>
+            <option value="MMOil">MM/Oil</option>
+            <option value="Bosun">Bosun</option>
+            <option value="AB">AB</option>
+            <option value="OS">OS</option>
+          </select></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><label for="field3">Name: </label></td>
+          <td><input id="field3" type="text" name="gen-name" value="Igor"></td>
+          <td><label for="field4">Family: </label></td>
+          <td><input id="field4" type="text" name="gen-family" value="Gavelyuk"></td>
+          <td><label for="field5">Middle :</label></td>
+          <td><input id="field5" type="text" name="gen-middle" value="Valentynovich"></td>
+          <td><label for="field6">Birthday</label></td>
+          <td><input id="field6" type="text" name="gen-name" value="12.02.2000"></td>
+          <td><label for="field7">Age</label></td>
+          <td><input id="field7" type="text" name="gen-family" value="34"></td>
+        </tr>
+        <tr>
+          <td><label for="field8">Tel 1: </label></td>
+          <td><input id="field8" type="text" name="gen-tel1" value="380666540976"></td>
+
+          <td><label for="field9">Tel 2: </label></td>
+          <td><input id="field9" type="text" name="gen-tel2" value="980666540976"></td>
+
+          <td><label for="field10">e-mail 1:</label></td>
+          <td><input id="field10" type="text" name="gen-email1" value="gavel@gavel.web"></td>
+
+          <td><label for="field11">e-mail 2:</label></td>
+          <td><input id="field11" type="text" name="gen-email2" value="gavelhaha@gavel.web"></td>
+
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td colspan="1"><label for="field12">Address</label></td>
+            <td colspan="4"><textarea id=field12 name="gen-address" rows="0" cols="45"></textarea></td>
+            <td colspan="1"><label for="field12">Address</label></td>
+            <td colspan="4"><textarea id=field12 name="gen-address" rows="0" cols="45"></textarea></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+
+    <form class="" action="index.html" method="post">
+      <div class="col m12">
+        <span class="header">General information</span>
+        <input id="idgeneral" class="inactive"type="button" name="" value="Show/Hide">
+      </div>
+      <div class="col m12 general">
+
+        <label for="field1">Readiness:</label>
+        <input id="field1" type="text" name="gen-da" value="13.06.2018">
+
+        <label for="field2">Salary :</label>
+        <input id="field2" type="text" name="gen-salary" value="3800Eur">
+
+        <label for="rank">Rank</label>
+        <select id="rank" name="rank">
+          <option value="Not selected" selected>Not selected</option>
+          <option value="Master">Master</option>
+          <option value="ChOff">Ch.Off</option>
+          <option value="2ndOff">2nd.Off</option>
+          <option value="3rdOff">3rd.Off</option>
+          <option value="ChEng">Ch.Eng</option>
+          <option value="2ndEng">2nd.Eng</option>
+          <option value="3rdEng">3rd.Eng</option>
+          <option value="MMOil">MM/Oil</option>
+          <option value="Bosun">Bosun</option>
+          <option value="AB">AB</option>
+          <option value="OS">OS</option>
+        </select>
+
+        <label for="field6">Birthday</label>
+        <input id="field6" type="text" name="gen-name" value="12.02.2000">
+      </div>
+
+      <div class="col m12 general">
+        <label for="field3">Name: </label>
+        <input id="field3" type="text" name="gen-name" value="Igor">
+
+        <label for="field4">Family: </label>
+        <input id="field4" type="text" name="gen-family" value="Gavelyuk">
+
+        <label for="field5">Middle :</label>
+        <input id="field5" type="text" name="gen-middle" value="Valentynovich">
+
+        <label for="field7">Age</label>
+        <input id="field7" type="text" name="gen-family" value="34">
+
+      </div>
+
+      <div class="col m12 general">
+        <label for="field8">Tel 1: </label>
+        <input id="field8" type="text" name="gen-tel1" value="380666540976">
+
+        <label for="field9">Tel 2: </label>
+        <input id="field9" type="text" name="gen-tel2" value="980666540976">
+
+        <label for="field10">e-mail 1:</label>
+        <input id="field10" type="text" name="gen-email1" value="gavel@gavel.web">
+
+        <label for="field11">e-mail 2:</label>
+        <input id="field11" type="text" name="gen-email2" value="gavelhaha@gavel.web">
+      </div>
+      <div class="m12 general">
+        &nbsp;&nbsp;<label for="field12">Address</label>
+        <textarea id=field12 name="gen-address" rows="0" cols="80"></textarea>
+      </div>
+
+      <script type="text/javascript">
+      var hidegeneral = document.getElementById("idgeneral");
+      hidegeneral.onclick = (function(x){
+        console.log(x);
+        var general = document.getElementsByClassName("general");
+        console.log(general);
+        for (var i = 0; i < general.length; i++) {
+          if(general[i].style.display=="none"){
+            general[i].style.display="contents";
+          }else{
+            general[i].style.display="none"
+          }
+        }
+      });
+      </script>
+
+      <br><hr>
+
+      <div class="col m12">
+        <span class="header">Next of Kin information</span>
+        <input id="idnok" class="inactive"type="button" name="" value="Show/Hide">
+      </div>
+      <div class="col m12 nok">
+
+        <label for="rank">Relation</label>
+        <select id="rank" name="nok-rank">
+          <option value="Not selected" selected>Not selected</option>
+          <option value="Master">Master</option>
+          <option value="ChOff">Ch.Off</option>
+          <option value="2ndOff">2nd.Off</option>
+          <option value="3rdOff">3rd.Off</option>
+          <option value="ChEng">Ch.Eng</option>
+          <option value="2ndEng">2nd.Eng</option>
+          <option value="3rdEng">3rd.Eng</option>
+          <option value="MMOil">MM/Oil</option>
+          <option value="Bosun">Bosun</option>
+          <option value="AB">AB</option>
+          <option value="OS">OS</option>
+        </select>
+
+        <label for="field3">Name: </label>
+        <input id="field3" type="text" name="nok-name" value="Igor">
+
+        <label for="field4">Family: </label>
+        <input id="field4" type="text" name="nok-family" value="Gavelyuk">
+
+      </div>
+
+      <div class="col m12 nok">
+        <label for="field5">Middle :</label>
+        <input id="field5" type="text" name="nok-middle" value="Valentynovich">
+
+        <label for="field6">Birthday</label>
+        <input id="field6" type="text" name="nok-name" value="12.02.2000">
+
+        <label for="field7">Age</label>
+        <input id="field7" type="text" name="nok-family" value="34">
+      </div>
+
+      <div class="col m12 nok">
+        <label for="field8">Tel 1: </label>
+        <input id="field8" type="text" name="nok-tel1" value="380666540976">
+
+        <label for="field9">Tel 2: </label>
+        <input id="field9" type="text" name="nok-tel2" value="980666540976">
+
+        <label for="field10">e-mail 1:</label>
+        <input id="field10" type="text" name="nok-email1" value="gavel@gavel.web">
+
+      </div>
+      <div class="m12 nok">
+        &nbsp;&nbsp;<label for="field12">Address</label>
+        <textarea id="field12" name="nok-address" rows="0" cols="80"></textarea>
+        <br>
+      </div>
+
+      <br>
+
+      <div class="col m12 nok">
+
+        <label for="rank">Relation</label>
+        <select id="rank" name="nok-rank">
+          <option value="Not selected" selected>Not selected</option>
+          <option value="Master">Master</option>
+          <option value="ChOff">Ch.Off</option>
+          <option value="2ndOff">2nd.Off</option>
+          <option value="3rdOff">3rd.Off</option>
+          <option value="ChEng">Ch.Eng</option>
+          <option value="2ndEng">2nd.Eng</option>
+          <option value="3rdEng">3rd.Eng</option>
+          <option value="MMOil">MM/Oil</option>
+          <option value="Bosun">Bosun</option>
+          <option value="AB">AB</option>
+          <option value="OS">OS</option>
+        </select>
+
+        <label for="field3">Name: </label>
+        <input id="field3" type="text" name="nok-name" value="Igor">
+
+        <label for="field4">Family: </label>
+        <input id="field4" type="text" name="nok-family" value="Gavelyuk">
+
+      </div>
+
+      <div class="col m12 nok">
+        <label for="field5">Middle :</label>
+        <input id="field5" type="text" name="nok-middle" value="Valentynovich">
+
+        <label for="field6">Birthday</label>
+        <input id="field6" type="text" name="nok-name" value="12.02.2000">
+
+        <label for="field7">Age</label>
+        <input id="field7" type="text" name="nok-family" value="34">
+      </div>
+
+      <div class="col m12 nok">
+        <label for="field8">Tel 1: </label>
+        <input id="field8" type="text" name="nok-tel1" value="380666540976">
+
+        <label for="field9">Tel 2: </label>
+        <input id="field9" type="text" name="nok-tel2" value="980666540976">
+
+        <label for="field10">e-mail 1:</label>
+        <input id="field10" type="text" name="nok-email1" value="gavel@gavel.web">
+
+      </div>
+      <div class="m12 nok">
+        &nbsp;&nbsp;<label for="field12">Address</label>
+        <textarea id="field12" name="nok-address" rows="0" cols="80"></textarea>
+        <br>
+      </div>
+
+      <br><hr>
+
+      <script type="text/javascript">
+      var hidegeneral = document.getElementById("idnok");
+      hidegeneral.onclick = (function(x){
+        console.log(x);
+        var general = document.getElementsByClassName("nok");
+        console.log(general);
+        for (var i = 0; i < general.length; i++) {
+          if(general[i].style.display=="none"){
+            general[i].style.display="contents";
+          }else{
+            general[i].style.display="none"
+          }
+        }
+      });
+      </script>
+
+
+
+
+    </form>
+  </div>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {});
+</script>
+
+</html>
